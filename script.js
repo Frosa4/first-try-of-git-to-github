@@ -1,37 +1,26 @@
 'use strict';
 
-if (4 == 10) {
-    console.log('OK!');
-} else {
-    console.log('pizdec!');
-}
 
-const num = '50';
 
-// if (num < 49) {
-//     console.log('ne previlno')
-// } else if (num > 100){
-//     console.log(' too much')
-// } else{
-//     console.log('OK!')
+// while (num <= 55) {
+//     console.log(num);
+//     num++;
 // }
 
-// (num === 50) ? console.log('OK!') : console.log('ne previlno');
+// do {
+//     console.log(num);
+//     num++;    
+// }
+// while (num <= 55);
 
-switch (num) {
-    case '49': 
-        console.log('Nihua');
-        break;
+let num = 50;
 
-    case '100': 
-        console.log('Nihua');
-        break;
+for (let i = 1; i < 8; i++) {
 
-    case '50':
-        console.log('ogon verno!');
-        break;
-
-    default: 
-        console.log('not this time');
-        break;
+    if (i === 6) {
+        // break;
+        continue;
+    }
+    console.log(i);
+    
 }
