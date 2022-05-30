@@ -1,42 +1,83 @@
 'use strict';
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-let incr = 10,
-    decr = 10;
-const personalMovieDB = {
 
-    //++incr;
-    //--decr;
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    private: false
+// THEORY FUNCTIONS
+// 1)
+let num = 20;
+
+function showFirstMessage(text, arg, pots, ebanb) {
+    console.log(text);
+    let num = 13;
+    console.log(num);
+}
+
+showFirstMessage('Hi Sanya, ti pidor');
+console.log(num);
+
+// 2)
+
+// function calc(a, b) {
+//     return (a + b);
+
+// }
+
+// console.log(calc(4, 3));
+// console.log(calc(10, 3));
+
+// 3) fucntion declaraiton without semicolon in the end of function
+
+function ret() {
+    let num = 50;
+    return num; 
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+// 4) function expression with semicolon in the end!
+
+const logger = function() {
+    console.log('Ti pidor!');
 };
 
-for (let i = 0; i < 2; i++) {
-    const a = prompt('Один из последних просмотренных фильмов?', ''),
-        b = prompt('rate it', '');
+logger();
 
-    if (a != null && b != null && a!= '' && b != '' && a.length < 50) {
-        personalMovieDB.movies[a] = b;
-        console.log('Done');
-    } else {
-        console.log('ne ne ne ne verno');
-        // i--;
-    }
-}
+// 5) Arrow function?
+
+const calc = (a, b) => {
+    console.log(1);
+    return a + b
+};
 
 
-console.log(personalMovieDB);
 
-if (personalMovieDB.count < 10) {
-    console.log('Sliwkom malo uebok');
-} else if(personalMovieDB >= 10 && personalMovieDB.count <30) {
-    console.log('serednychek');
-} else if(personalMovieDB.count >= 30) {
-    console.log('sidi lychwe viydi na ulitsu');
-} else {
-    console.log('Owibka naxui, vvodi davai cifri');
-}
+
+const str = 'teSt';
+const arr = [1, 2, 3, 5, 6];
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str);
+
+const fruit = 'some penis';
+
+console.log(fruit.indexOf('s'));
+
+const logg = 'Ti pidor';
+
+console.log(logg.slice(3, 8));
+
+console.log(logg.substring(3, 8));
+
+console.log(logg.substr(3, 8));
+
+const numnum = 12.69;
+console.log(Math.round(numnum));
+
+
+
+
+
+// PRACTICE FUNCTIONS
+
