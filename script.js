@@ -1,26 +1,45 @@
 'use strict';
 
-function first (){
-    // Do woto
-    setTimeout(function(){
-        console.log(1);
-    },500);
-}
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        background: 'red'
+    },
+    makeTest: function(){
+        console.log('AHUET DERMO');
+    }
+};
 
-function second(){
-    console.log(2);
-}
+options.makeTest();
 
-first();
-second();
+const {border, background} = options.colors;
+console.log(border);
 
-function learnJS(lang, callback){
-    console.log(`im learning: ${lang}`);
-    callback();
-}
+// console.log(Object.keys(options).length);
 
-function done() {
-    console.log('I have passed this lesson');
-}
 
-learnJS('JavaScript', done);
+
+// console.log(options.name);
+
+// delete options.name;
+// console.log(options);
+
+// let counter = 0;
+
+// for (let key in options) {
+//     if (typeof(options[key]) === 'object') {
+//         for (let i in options[key]){
+//             console.log(`Свойство ${i} have meaning ${options[key][i]}`);
+//             // counter++; 
+//         } 
+//     } else {
+//             console.log(`Свойство ${key} have meaning ${options[key]}`);
+//             counter++;
+//         }
+// }
+
+// console.log(counter);
+
