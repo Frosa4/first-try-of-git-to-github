@@ -1,95 +1,57 @@
 'use strict';
 
+// To string
 
-const personalMovieDB = {
-    count: 0,
-    movies: {},
-    actors: {},
-    genres: [],
-    private: false,
-    start: function() {
-        personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//1
 
-        while (personalMovieDB.count == '' || 
-        personalMovieDB.count == null || 
-        isNaN(personalMovieDB.count)) {
-        personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
-        }
-    },
+console.log(typeof(String(4)));
 
-    rememberMyFilms: function(){
-        for (let i=0; i < 2; i ++) {
-                const a = prompt('Latest film you saw', ''),
-                        b = prompt('rate it', '');
-            if ( a!=null && b!= null && a != '' && b != '' && a.length < 50) {
-                personalMovieDB.movies[a] = b;
-                console.log('done');
-            } else{
-                console.log('error');
-                i --;
-            }        
-        }
+//2)
 
-    },
-    detectPersonalLevel: function() {
-        if (personalMovieDB.count < 10) {
-        console.log('sliwkom malo uebok');
-        } else if (10 <= personalMovieDB.count <= 30) {
-            console.log('normul');
-        } else if (personalMovieDB.count > 30) {
-            console.log('ebat ti woobwe na ulice bivaesh?');
-        } else {
-            console.log('TI POTS');
-        }
-    },
-    showMyDB: function(hidden) {
-        if (!hidden) {
-        console.log(personalMovieDB);
-        }
-    },
-    toggleVisibleMyDb: function(){
-        if (personalMovieDB.private) {
-            personalMovieDB.private = false;
-        } else{
-           personalMovieDB.private = true;
-        }
+console.log(typeof(NaN + ''));
 
-    },
-    writeYourGenres: function() {
+const num = 5;
 
-        for (let i = 1; i <= 2; i++) {
+console.log('http://vk.com/catalog/' + num);
 
-            // const genre = prompt(`ваш любимый жанр под номером ${i}`);
+const fontize = 26 + 'px';
 
-            // if (genre =='' || genre == null){
-            //     console.log('you have dialed wrong info');
-            //     i--;
-            // } else{
-            //     personalMovieDB.genres[i - 1] = genre;
-            // }
-            let genres = prompt(`please enter you favorites genres using comma`).toLowerCase();
+// To Number
 
-            if (genres =='' || genres == null){
-                console.log('you have dialed wrong info');
-                i--;
-            } else{
-                personalMovieDB.genres = genres.split(', ');
-                personalMovieDB.genres.sort();
-            }
-        }
+console.log(typeof(Number('4')));
 
-        personalMovieDB.genres.forEach((item , i) => {
-            console.log(`favorite genre ${i + 1} - is ${item}`);
-        });
-    }
-};
+//2
 
+console.log(typeof(+'5'));
 
-// function showMyDB(hidden) {
-//     if (!hidden) {
-//         console.log(personalMovieDB);
-//     }
-// }
+//3
 
-// showMyDB(personalMovieDB.private);
+console.log(typeof(parseInt('15px', 10)));
 
+let answer = +prompt('ni ch suka? naskolko ti axuel ot 1 do 10', 'Vvedi chislo suka!');
+
+// to Bollean
+
+// Always to False
+
+0, '', null, undefined, NaN;
+
+let switcher = null;
+
+if (switcher) {
+    console.log('Working...')
+} 
+
+switcher = 1;
+
+if (switcher) {
+    console.log('Working...')
+} 
+
+//2 
+
+console.log(typeof (Boolean(4)));
+
+//3
+
+console.log(typeof (!!'445'));
