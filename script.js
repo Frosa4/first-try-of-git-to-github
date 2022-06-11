@@ -1,57 +1,69 @@
 'use strict';
-
-// To string
-
 //1
 
-console.log(typeof(String(4)));
+// let x = 5;
 
-//2)
+// alert(++x);
 
-console.log(typeof(NaN + ''));
-
-const num = 5;
-
-console.log('http://vk.com/catalog/' + num);
-
-const fontize = 26 + 'px';
-
-// To Number
-
-console.log(typeof(Number('4')));
+// console.log(x);
 
 //2
 
-console.log(typeof(+'5'));
+//[] + false - null + true
+// console.log([] + false - null + true); // 'false'
+
+
 
 //3
 
-console.log(typeof(parseInt('15px', 10)));
+// let y = 1;
+//     x = y = 2;
 
-let answer = +prompt('ni ch suka? naskolko ti axuel ot 1 do 10', 'Vvedi chislo suka!');
+// console.log(x);
 
-// to Bollean
+// //4
 
-// Always to False
+// console.log([] + 1 + 2); // '12'
 
-0, '', null, undefined, NaN;
+// //5
 
-let switcher = null;
+// alert('1'[0]);
 
-if (switcher) {
-    console.log('Working...')
-} 
+//6
 
-switcher = 1;
+//console.log(2 && 1 && null && 0 && undefined);
 
-if (switcher) {
-    console.log('Working...')
-} 
+// && (И) запинается на лжи
+// || (ИЛИ) запинается на правде
 
-//2 
+//7
 
-console.log(typeof (Boolean(4)));
+// console.log(!!(1 && 2) === (1 && 2));
 
-//3
+//8
+//          3       3        
+// alert (null || 2 && 3 || 4);
 
-console.log(typeof (!!'445'));
+//9
+
+// const a = [1, 2, 3];
+// const b = [1, 2, 3];
+
+// if (a == b) {
+//     console.log('zaebis');
+// } else {
+//     console.log('idi uchis uebok')
+// };
+
+//10
+
+// alert(+'Infinity');
+
+//11
+
+// console.log('Ёжик' > 'яблоко');
+//смотри ЮНИКОД сравнение посимвольно
+
+//12
+
+console.log(0 || "" || 2 || undefined || true || falsе);
